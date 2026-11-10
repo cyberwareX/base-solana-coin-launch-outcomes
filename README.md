@@ -8,9 +8,10 @@ coins, each with its price change 1 hour, 6 hours, 24 hours and 7 days after our
   Bots, exchanges, scam and wash wallets are left out, and so are wallet farms: many wallets fed by one
   funder that buy the same coins (build 2026-11-10 11:01 UTC).
 
-## Whole table, last 60 days (build 2026-11-10 09:41 UTC)
+## Whole table (build 2026-11-10 09:41 UTC)
 
-Window: coins first seen 2026-10-04 09:35 to 2026-11-10 08:50 UTC. Counted from all 6,345 rows, not a sample.
+Window: coins first seen 2026-10-04 09:35 to 2026-11-10 08:50 UTC (37 days; the recorder started on 2026-10-04).
+Counted from all 6,345 rows, not a sample.
 
 | Chain  | Coins | With a 24 h reading | Up at 24 h    | Down 90% or more at 24 h |
 |--------|------:|--------------------:|--------------:|-------------------------:|
@@ -27,7 +28,7 @@ it is not every token deployed on Base.
 | chain | base or solana |
 | token | contract address (Base) or mint (Solana) |
 | symbol | ticker as listed |
-| first_seen_utc | when our recorder first saw the coin, UTC; usually within minutes of the pool opening |
+| first_seen_utc | when our recorder first saw the coin, UTC |
 | liquidity_usd_first_seen | pool liquidity in USD at first sight |
 | fdv_usd_first_seen | fully diluted value in USD at first sight |
 | ret_1h, ret_6h, ret_24h | price change after 1, 6, 24 hours, as a fraction (-1 = zero, 0.5 = +50%); empty = not read |
@@ -39,9 +40,9 @@ Returns are measured from the price at first sight, not from the first block.
 
 ## Get the whole table
 
-- Full CSV, last 60 days, about 6,300 rows: 15 USDC.
+- Full CSV, every coin we have (up to 60 days back; today that is 37 days, about 6,300 rows): 15 USDC.
   - Pay from any wallet holding USDC on Base: https://chain.cyberwarex.com/buy
-  - Or with an x402 client: `GET https://chain.cyberwarex.com/launch-dataset`
+  - Or with an x402 client: `GET https://chain.cyberwarex.com/launch-dataset?days=60` (default is 30 days)
 - One coin's row: 0.01 USDC, `GET https://chain.cyberwarex.com/launch-outcome?token=<address or mint>`
 - Free samples, always fresh: https://chain.cyberwarex.com/launch-dataset/sample and
   https://chain.cyberwarex.com/wallet-report/sample
