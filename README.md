@@ -5,6 +5,8 @@ coins, each with its price change 1 hour, 6 hours, 24 hours and 7 days after our
 
 - `sample.csv` / `sample.json`: 50 rows, the 25 newest coins per chain whose 24 hour reading is already in.
 - `wallet-report-sample.json`: free sample of our smart-money wallet report (addresses masked).
+  Bots, exchanges, scam and wash wallets are left out, and so are wallet farms: many wallets fed by one
+  funder that buy the same coins (build 2026-11-10 11:01 UTC).
 
 ## Whole table, last 60 days (build 2026-11-10 09:41 UTC)
 
