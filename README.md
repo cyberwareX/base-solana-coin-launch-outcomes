@@ -6,17 +6,17 @@ coins, each with its price change 1 hour, 6 hours, 24 hours and 7 days after our
 - `sample.csv` / `sample.json`: 50 rows, the 25 newest coins per chain whose 24 hour reading is already in.
 - `wallet-report-sample.json`: free sample of our smart-money wallet report (addresses masked).
   Bots, exchanges, scam and wash wallets are left out, and so are wallet farms: many wallets fed by one
-  funder that buy the same coins (build 2026-11-10 11:01 UTC).
+  funder that buy the same coins (build 2026-11-11 00:27 UTC).
 
-## Whole table (build 2026-11-10 09:41 UTC)
+## Whole table (build 2026-11-11 00:41 UTC)
 
-Window: coins first seen 2026-10-04 09:35 to 2026-11-10 08:50 UTC (37 days; the recorder started on 2026-10-04).
-Counted from all 6,345 rows, not a sample.
+Window: coins first seen 2026-10-04 09:35 to 2026-11-11 00:30 UTC (38 days; the recorder started on 2026-10-04).
+Counted from all 6,418 rows, not a sample.
 
 | Chain  | Coins | With a 24 h reading | Up at 24 h    | Down 90% or more at 24 h |
 |--------|------:|--------------------:|--------------:|-------------------------:|
-| Base   | 2,054 | 1,976               | 83 (4.2%)     | 1,877 (95.0%)            |
-| Solana | 4,291 | 4,091               | 444 (10.9%)   | 1,538 (37.6%)            |
+| Base   | 2,075 | 1,998               | 87 (4.4%)     | 1,895 (94.8%)            |
+| Solana | 4,343 | 4,154               | 452 (10.9%)   | 1,564 (37.7%)            |
 
 Shares are of coins with a 24 h reading. Base here means coins our recorder picked up on Base;
 it is not every token deployed on Base.
@@ -40,7 +40,7 @@ Returns are measured from the price at first sight, not from the first block.
 
 ## Get the whole table
 
-- Full CSV, every coin we have (up to 60 days back; today that is 37 days, about 6,300 rows): 15 USDC.
+- Full CSV, every coin we have (up to 60 days back; today that is 38 days, about 6,400 rows): 15 USDC.
   - Pay from any wallet holding USDC on Base: https://chain.cyberwarex.com/buy
   - Or with an x402 client: `GET https://chain.cyberwarex.com/launch-dataset?days=60` (default is 30 days)
 - One coin's row: 0.01 USDC, `GET https://chain.cyberwarex.com/launch-outcome?token=<address or mint>`
