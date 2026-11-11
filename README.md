@@ -46,10 +46,11 @@ Returns are measured from the price at first sight, not from the first block.
 - One coin's row: 0.01 USDC, `GET https://chain.cyberwarex.com/launch-outcome?token=<address or mint>`
 - Free samples, always fresh: https://chain.cyberwarex.com/launch-dataset/sample and
   https://chain.cyberwarex.com/wallet-report/sample
+- Same sample in the Hugging Face dataset viewer: https://huggingface.co/datasets/cyberwarex/launch-outcomes
 - Details and FAQ: https://cyberwarex.com/answers/token-launch-outcomes-dataset-base-solana
   and https://cyberwarex.com/answers/smart-money-wallet-report-base-solana
 
-The files here are a snapshot from the date above. The live sample endpoints are refreshed every hour.
+The files here are a snapshot from the date above, refreshed every week. The live sample endpoints are refreshed every hour.
 
 ## License
 
